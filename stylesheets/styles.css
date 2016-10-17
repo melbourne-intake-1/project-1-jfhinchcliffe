@@ -1,0 +1,245 @@
+html {
+}
+
+body {
+  margin: 0;
+  background-color: #d2d4d9;
+  font-family: 'PT Sans Narrow', serif;
+  font-size: 21px;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+#projects {
+  display: none;
+}
+
+#contact {
+  display: none;
+}
+
+.spacer {
+  display: block;
+  height: 2.5em;
+}
+
+header {
+  background-color: #2f2f2f;
+  background-image: url("../images/city-background-10-mobile.jpeg");
+  background-size: cover;
+  height: 90vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.portrait-pic {
+  margin-top: 1em;
+  border-radius: 100%;
+  border: 1px solid black;
+  padding: 0px;
+  width: 50%;
+}
+
+header .title {
+  text-align: center;
+}
+
+header .title h1 {
+  color: #dcedf1;
+  font-family: 'Amatic SC';
+  letter-spacing: 3px;
+  text-shadow: 1px 1px orange;
+}
+
+header .title h3 {
+  color: #e2cfcf;
+  padding-bottom: 1.5em;
+  margin: 0;
+  text-shadow: 2px 2px black;
+}
+
+.contact-strip {
+  background-color: rgba(32, 33, 33, 0.8);
+  text-align: center;
+  position: absolute;
+  bottom: 1em;
+  left: 0;
+  right: 0;
+  letter-spacing: .5em;
+  padding: 1em;
+}
+
+.contact-strip a {
+  color: #f94d4d;
+}
+
+.menu-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1b1b1b;
+}
+
+.menu-bar li {
+  float: left;
+  width: 50%;
+}
+
+.menu-bar li a {
+  text-transform: uppercase;
+  display: block;
+  color: rgb(196, 220, 224);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active {
+    background-color: #cb2828;
+}
+
+.content-pane{
+  background-color: #f5f5f1;
+  padding: .5em;
+  margin: .5em;
+  border-radius: .5em;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bolder;
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(185, 31, 54)
+}
+
+.info-text {
+  padding: 1em;
+  margin: 0;
+  text-align: center;
+}
+
+.contact-strip a {
+  color: #d4d4d4;
+}
+.contact-strip a:visited {
+  color: #d4d4d4;
+}
+
+a:visited {
+  color: rgb(194, 52, 72);
+}
+
+.link {
+  color: yellow;
+  margin-left: 1em;
+  margin-right: 1em;
+  letter-spacing: 0.9px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+.section-head {
+  color: #cd0b0b;
+  font-size: 35px;
+  text-align: center;
+  font-family: "Amatic SC";
+  margin: 5px;
+}
+
+.content-pane i {
+  color: rgb(60, 60, 60);
+}
+
+footer {
+  background-color: rgba(256, 256, 256, 0.2);
+  position: absolute;
+  padding-top: .7em;
+  width: 100%;
+  text-align: center;
+}
+
+.button {
+  border-radius: .2em;
+  display: block;
+  text-decoration: underline;
+}
+
+footer .code-by-hand {
+  font-size: 12px;
+}
+
+
+/* No greater than 900px, no less than 400px */
+@media (max-height:470px) {
+
+
+
+    header .spacer {
+      height: 1px;
+    }
+    header .title h3 {
+      display: none;
+  }​
+
+}
+
+@media only screen and (min-width: 768px) {
+     /* input desktop only styles below here */
+    header {
+       background-image: url("../images/city-background-10.jpeg");
+      }
+
+    header img {
+      width: 20%;
+    }
+
+    .content-pane {
+      width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 1.5em;
+    }
+
+    .section-head {
+      font-size: 45px;
+    }
+
+    header .title h1 {
+      font-size: 50px;
+    }
+
+    .portrait-pic {
+      width: 15em;
+    }
+
+    a {
+      transition: color .3s linear;
+    }
+
+    .contact-strip {
+      letter-spacing: 1.5em;
+    }
+    .contact-strip a:hover {
+      color: rgb(208, 27, 27);
+    }
+
+    .menu-bar a:hover {
+      color: rgb(208, 27, 27);
+    }
+
+    .project {
+      width: 300px;
+      font-size: 18px;
+    }
+}
